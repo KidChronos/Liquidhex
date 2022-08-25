@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background-color: grey;
+  font-family: sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1 h1"
+    "h3 h3 h3 h2"
+    "h3 h3 h3 h2"
+    "h3 h3 h3 h2";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 140px 1fr 20px;
+}
+
+h1,
+h2,
+h3 {
+  max-width: 1960px;
+  background-color: black;
+  margin: 1px;
+  border: brown 1px solid;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+h3 {
+  grid-area: h3;
+}
